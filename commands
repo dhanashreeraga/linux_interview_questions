@@ -1,0 +1,185 @@
+1. File and Directory Management
+Commands to navigate and manage files and directories.
+
+1.ls
+Syntax: ls [options] [path]
+Lists the contents of a directory.
+Example: ls -l (detailed list).
+
+2.cd
+Syntax: cd [directory]
+Changes the current working directory.
+Example: cd /home/user.
+
+3.pwd
+Syntax: pwd
+Prints the current working directory.
+
+4.mkdir
+Syntax: mkdir [directory]
+Creates a new directory.
+Example: mkdir new_folder.
+
+5.rm
+Syntax: rm [options] [file/directory]
+Deletes files or directories.
+Example: rm -r folder (deletes recursively).
+
+6.mv
+Syntax: mv [source] [destination]
+Moves or renames files.
+Example: mv file1.txt folder/.
+
+7.cp
+Syntax: cp [source] [destination]
+Copies files or directories.
+Example: cp file1.txt backup/.
+
+2. File Viewing and Editing
+Commands to view or edit the contents of files.
+
+1.cat
+Syntax: cat [file]
+Displays the content of a file.
+Example: cat file.txt.
+
+2.less
+Syntax: less [file]
+Opens a file for paginated viewing.
+Example: less large_file.txt.
+
+3.head
+Syntax: head -n [number] [file]
+Shows the first few lines of a file.
+Example: head -n 5 file.txt.
+
+4.tail
+Syntax: tail -n [number] [file]
+Displays the last few lines of a file.
+Example: tail -n 10 log.txt.
+
+3. Process Management
+Commands to manage and monitor system processes.
+
+1.ps
+
+Syntax: ps [options]
+Displays running processes.
+Example: ps -aux.
+
+2.top
+Syntax: top
+Shows an interactive view of system processes.
+
+3.kill
+Syntax: kill [PID]
+Sends a signal to terminate a process.
+Example: kill 1234 (terminate process with PID 1234).
+4.jobs
+Syntax: jobs
+Lists all background jobs.
+
+5.bg and fg
+Syntax: bg [job_id], fg [job_id]
+Resumes background (bg) or foreground (fg) jobs.
+
+4. User Management
+Commands to manage users and permissions.
+
+1.whoami
+Syntax: whoami
+Displays the current logged-in user.
+
+2.id
+Syntax: id
+Shows user and group IDs.
+
+3.chmod
+Syntax: chmod [permissions] [file]
+Changes file permissions.
+Example: chmod 755 script.sh.
+4.chown
+Syntax: chown [owner:group] [file]
+Changes file ownership.
+Example: chown user:group file.txt.
+
+5. Disk and Filesystem Management
+Commands to handle disk usage and filesystems.
+
+1.df
+Syntax: df -h
+Shows disk space usage in human-readable format.
+
+2.du
+Syntax: du -sh [path]
+Displays the size of a file or directory.
+Example: du -sh folder/.
+3.mount
+Syntax: mount [device] [mount_point]
+Mounts a filesystem.
+Example: mount /dev/sda1 /mnt.
+
+4.umount
+Syntax: umount [mount_point]
+Unmounts a filesystem.
+
+6. Networking Commands
+For network troubleshooting and data transfer.
+
+1.ping
+Syntax: ping [hostname/IP]
+Tests connectivity to a host.
+Example: ping google.com.
+
+2.curl
+Syntax: curl [URL]
+Transfers data from or to a server.
+Example: curl https://example.com.
+
+3.scp
+Syntax: scp [source] [destination]
+Securely copies files between systems.
+Example: scp file.txt user@host:/path.
+
+7. System Information
+Commands to get information about the system.
+
+1.uname
+Syntax: uname -a
+Displays system information.
+
+2.uptime
+Syntax: uptime
+Shows how long the system has been running.
+
+3.hostname
+Syntax: hostname
+Displays or sets the system hostname.
+
+4.dmesg
+Syntax: dmesg
+Prints system boot logs.
+
+8. Package Management
+Commands for installing and managing software.
+
+1.apt (Debian/Ubuntu)
+
+Syntax: apt install [package]
+Installs a package.
+Example: apt install vim.
+
+2.yum or dnf (RHEL/CentOS)
+
+Syntax: yum install [package]
+Installs a package.
+
+9. Listing All Available Commands
+compgen
+
+Syntax: compgen -c
+Lists all commands available in the shell.
+wc
+
+Syntax: compgen -c | wc -l
+Counts the total number of commands.
