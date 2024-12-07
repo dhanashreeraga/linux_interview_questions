@@ -1,0 +1,129 @@
+1.What is Linux? Why is it so popular?
+Answer:
+Linux is an open-source, Unix-like operating system kernel. It’s popular because of its stability, security, flexibility, and its use in servers, embedded systems, and desktops.
+
+2.What are the basic components of Linux?
+Answer:
+Kernel: Core of the OS.
+Shell: Interface for command execution.
+File System: Organizes and stores data.
+Utilities: Tools and programs for system management.
+
+3.What is the Linux file system hierarchy?
+Answer:
+/ (Root): Base directory.
+/home: User files.
+/var: Logs and variable files.
+/etc: Configuration files.
+/bin: Essential binaries.
+/usr: User programs and libraries.
+
+4.What are inodes?
+Answer:
+An inode is a data structure that stores metadata about a file, such as file size, owner, permissions, and location on disk.
+
+5.What does the ls -l command do?
+Answer:
+It lists the files in a directory in a long format, showing permissions, owner, group, size, and modification time.
+
+6.How do you create a file in Linux?
+Answer:
+Use commands like touch filename, echo 'text' > filename, or cat > filename.
+
+7.How do you check the running processes?
+Answer:
+Use commands like ps, top, or htop.
+
+8.What is a symbolic link? How is it created?
+Answer:
+A symbolic link is a pointer to another file. Use ln -s target link_name.
+
+9.How do you search for a file in Linux?
+Answer:
+Use find /path -name filename or locate filename.
+
+10.How do you check disk usage?
+Answer:
+Use df -h for disk space and du -sh /path for directory size.
+
+11.What is the difference between hard and soft links?
+Answer:
+Hard Link: Direct pointer to file data. Deleting original doesn’t affect it.
+Soft Link: A reference to another file’s path. Deleting original breaks the link.
+
+12.How do you check open ports on a system?
+Answer:
+Use netstat -tuln, ss -tuln, or lsof -i.
+
+13.What is a process and how do you manage it in Linux?
+Answer:
+A process is a running instance of a program. Manage it using commands like ps, kill, jobs, bg, and fg.
+
+14.What are runlevels?
+Answer:
+Runlevels define the state of the system (e.g., single-user mode, multi-user mode).
+
+0: Halt.
+1: Single-user.
+3: Multi-user without GUI.
+5: Multi-user with GUI.
+6: Reboot.
+
+15.How do you set file permissions in Linux?
+Answer:
+Use chmod with numeric (e.g., chmod 755 file) or symbolic (e.g., chmod u+x file) modes.
+
+16.How do you schedule tasks in Linux?
+Answer:
+Use cron for repetitive tasks (crontab -e) and at for one-time tasks.
+
+17.What is the difference between grep, fgrep, and egrep?
+Answer:
+
+grep: Searches using basic regular expressions.
+egrep: Uses extended regular expressions.
+fgrep: Searches for fixed strings.
+
+18.How do you monitor system performance?
+Answer:
+Use tools like top, htop, vmstat, iostat, sar, and free.
+
+19.What are iptables and how are they used?
+Answer:
+iptables is a command-line tool for managing firewall rules. Example:
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT (Allow SSH).
+
+20.How do you troubleshoot a service that isn’t starting?
+Answer:
+
+Check logs in /var/log/.
+Use systemctl status service_name.
+Verify configuration files.
+21.How do you find the largest files or directories?
+Answer:
+Use du -ah / | sort -rh | head -n 10.
+
+22.What are environment variables? How do you set them?
+Answer:
+Environment variables are key-value pairs for system settings.
+Set with export VAR=value or add to ~/.bashrc.
+
+23.What is SELinux?
+Answer:
+SELinux (Security-Enhanced Linux) is a security module that enforces access controls based on policies.
+
+24.How do you view and kill a process consuming high memory?
+Answer:
+Use top or htop to find the PID and then kill -9 PID.
+
+25.How do you configure a static IP in Linux?
+Answer:
+Edit /etc/network/interfaces (Debian-based) or /etc/sysconfig/network-scripts/ifcfg-eth0 (RHEL-based).
+
+26.explain the distribution of linux ?
+ Answer:
+General-purpose Distros: For everyday use (e.g., Ubuntu, Fedora, Debian).
+Server-focused Distros: For hosting and managing servers (e.g., CentOS, Red Hat Enterprise Linux, SUSE).
+Lightweight Distros: For low-resource systems (e.g., Puppy Linux, Lubuntu).
+Security-focused Distros: For ethical hacking and security (e.g., Kali Linux, Parrot OS).
+Specialized Distros: For specific tasks like gaming (e.g., SteamOS) or multimedia (e.g., Ubuntu Studio).
